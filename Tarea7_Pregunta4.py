@@ -1,13 +1,3 @@
-"""
-Crear un programa que permita crear un diccionario de datos “deudores”
-con el RUT de 5 personas (Claves) y sus respectivas deudas en pesos 
-(Valores). Posteriormente, dentro de un bucle permitir ingresar el abono 
-a las deudas de alguna persona identificándolo con su RUT y el monto del 
-abono. Si la persona queda con un saldo de deuda 0, se eliminará del 
-diccionario. Se finaliza el bucle si es que se ingresa un vacío. Al 
-finalizar, se deberá mostrar las personas que quedaron deudoras y sus 
-respectivos saldos de deuda.
-"""
 deudores = {}
 
 for x in range(5):
@@ -35,6 +25,6 @@ while True:
 
 for x in deudores:
     if deudores [x] == 0:
-        deudores[x] = ""
+        del(deudores[x])
 print(deudores)
 
